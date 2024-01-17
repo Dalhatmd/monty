@@ -1,9 +1,25 @@
-#include "main.h"
-void push(stack_t **stack, unsigned int line_no)
+#include "monty.h"
+void push(stack_t **head, unsigned int count)
 {
-	stack_t new = NULL;
+	int n;
 
-	new = malloc(sizeof(stack_t));
-	if (new == NULL)
-		return;
+	if (data.arg != NULL && !is_integer(data.arg[0]))
+	{
+		fprintf(stderr, "L%u: usage: push integer", count);
+		fclose(data.file);
+		exit(EXIT_FAILURE);
+	}
+	if (!data.arg)
+	{
+		fprintf(stderr, "L%u: usage: push integer\n", count);
+		fclose(data.file);
+		exit(EXIT_FAILURE);
+	}
+	n = atoi(data.arg);
+	add_node(head, n);
+}
 
+int is_integer(char ch)
+{
+	return (isdigit(ch) || (ch == '-' && isdigit(ch)));
+}
