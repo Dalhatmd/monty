@@ -58,4 +58,5 @@ void add_node(stack_t **head, int n);
 int execute(char *line, stack_t **stack, unsigned int count, FILE *file);
 void push(stack_t **head, unsigned int count);
 int is_integer(char ch);
+void pall(stack_t **stack, unsigned int count);
 #endif
