@@ -6,6 +6,7 @@ int execute(char *line, stack_t **stack, unsigned int count, FILE *file)
 	instruction_t instructions[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", pint},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
