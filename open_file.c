@@ -1,4 +1,5 @@
 #include "monty.h"
+data_t data = {NULL, NULL, NULL};                          stack_t *stack = NULL;
 FILE *open_file(const char *file)
 {
 	FILE *fd;

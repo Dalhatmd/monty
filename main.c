@@ -1,6 +1,4 @@
 #include "monty.h"
-data_t data = {NULL, NULL, NULL};
-stack_t *stack = NULL;
 /**
  * main - execution starts here
  *
