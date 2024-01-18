@@ -60,4 +60,6 @@ void push(stack_t **head, unsigned int count);
 int is_integer(char ch);
 void pall(stack_t **stack, unsigned int count);
 void pint(stack_t **stack, unsigned int count);
+void pop(stack_t **stack, unsigned int count);
+
 #endif
