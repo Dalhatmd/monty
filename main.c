@@ -14,6 +14,7 @@ int main(int argc, char **argv)
 	size_t len = 0;
 	ssize_t bytes_read = 1;
 	unsigned int line_no = 0;
+	stack_t *stack = NULL;
 
 	if (argc != 2)
 	{
@@ -32,8 +33,9 @@ int main(int argc, char **argv)
 		{
 			execute(line, &stack, line_no, fd);
 		}
-/*		free(line);*/
 	}
+	free(line);
 	fclose(fd);
+	_free(stack);
 	return (0);
 }

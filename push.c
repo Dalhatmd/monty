@@ -1,4 +1,10 @@
 #include "monty.h"
+/**
+ * push - adds an element to the top of the stack
+ *
+ * @head: input stack
+ * @count: line number
+ */
 void push(stack_t **head, unsigned int count)
 {
 	int n;
