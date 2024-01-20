@@ -34,7 +34,7 @@ int execute(char *line, stack_t **stack, unsigned int count, FILE *file)
 		}
 		i++;
 	}
-	if (op_code && (instructions[i].opcode == NULL || strcmp(op_code, "") == 0))
+	if (op_code && instructions[i].opcode == NULL)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", count, op_code);
 		fclose(file);
