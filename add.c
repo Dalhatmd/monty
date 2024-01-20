@@ -14,8 +14,8 @@ void add(stack_t **stack, unsigned int count)
 	}
 	
 	sum = head->n + head->next->n;
-	
-	head->n = sum;
-	head->next = head->next->next;
-	head->next->prev = head;
+	head->next->n = sum;
+	head->next->prev = NULL;
+	*stack = head->next;
+	free(head);
 }
