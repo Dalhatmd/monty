@@ -31,4 +31,5 @@ void mod(stack_t **stack, unsigned int count)
 	head->next->n = mod;
 	head->next->prev = NULL;
 	*stack = head->next;
+	free(head);
 }

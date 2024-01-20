@@ -11,7 +11,7 @@ void push(stack_t **head, unsigned int count)
 
 	if (data.arg != NULL && !is_integer(data.arg[0]))
 	{
-		fprintf(stderr, "L%u: usage: push integer", count);
+		fprintf(stderr, "L%u: usage: push integer\n", count);
 		fclose(data.file);
 		exit(EXIT_FAILURE);
 	}

@@ -1,6 +1,6 @@
 push 0
 push 1
-push 
+push dvi 
   push 3
                    pall    
 push 4

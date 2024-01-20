@@ -20,7 +20,7 @@ int execute(char *line, stack_t **stack, unsigned int count, FILE *file)
 	unsigned int i = 0;
 	char *op_code;
 
-	op_code = strtok(line, " \t\n");
+	op_code = strtok(line, " ;\t\n");
 /*	printf("%s\n", op_code);*/
 	if (op_code && op_code[0] == '#')
 		return (0);
@@ -34,9 +34,9 @@ int execute(char *line, stack_t **stack, unsigned int count, FILE *file)
 		}
 		i++;
 	}
-	if (op_code && instructions[i].opcode == NULL)
+	if (op_code && (instructions[i].opcode == NULL || strcmp(op_code, "") == 0))
 	{
-		fprintf(stderr, "L%d unknown instruction %s\n", count, op_code);
+		fprintf(stderr, "L%d: unknown instruction %s\n", count, op_code);
 		fclose(file);
 		exit(EXIT_FAILURE);
 	}
