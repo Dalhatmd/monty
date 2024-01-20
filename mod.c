@@ -27,7 +27,7 @@ void mod(stack_t **stack, unsigned int count)
 		_free(*stack);
 		exit(EXIT_FAILURE);
 	}
-	mod = head->next->n % head->n;
+	mod = head->n % head->next->n;
 	head->next->n = mod;
 	head->next->prev = NULL;
 	*stack = head->next;
