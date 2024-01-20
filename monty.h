@@ -66,4 +66,5 @@ void swap(stack_t **stack, unsigned int count);
 int count_elem(stack_t *stack);
 void add(stack_t **stack, unsigned int count);
 void nop(stack_t **stack, __attribute__((unused))unsigned int count);
+void sub(stack_t **stack, unsigned int count);
 #endif
