@@ -14,6 +14,7 @@ int execute(char *line, stack_t **stack, unsigned int count, FILE *file)
 		{"sub", sub},
 		{"div", my_div},
 		{"mul", mul},
+		{"mod", mod},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
