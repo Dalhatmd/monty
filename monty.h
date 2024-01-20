@@ -64,4 +64,5 @@ void pop(stack_t **stack, unsigned int count);
 void _free(stack_t *head);
 void swap(stack_t **stack, unsigned int count);
 int count_elem(stack_t *stack);
+void add(stack_t **stack, unsigned int count);
 #endif
