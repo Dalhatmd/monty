@@ -2,10 +2,10 @@
 void add(stack_t **stack, unsigned int count)
 {
 	stack_t *head;
+	int sum = 0;
 
 	head = *stack;
 
-	int sum = 0;
 	if (count_elem(head) < 2)
 	{
 		fprintf(stderr, "L%d: can't add, stack too short\n", count);
