@@ -70,4 +70,5 @@ void sub(stack_t **stack, unsigned int count);
 void my_div(stack_t **stack, unsigned int count);
 void mul(stack_t **stack, unsigned int count);
 void mod(stack_t **stack, unsigned int count);
+void pchar(stack_t **stack, unsigned int count);
 #endif
