@@ -13,7 +13,7 @@ void mod(stack_t **stack, unsigned int count)
 	head = *stack;
 	if(count_elem(head) < 2)
 	{
-		fprintf(stderr, " L%u: can't mod, stack too short\n", count);
+		fprintf(stderr, "L%u: can't mod, stack too short\n", count);
 		fclose(data.file);
 		free(data.line);
 		_free(*stack);
