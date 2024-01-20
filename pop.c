@@ -12,6 +12,9 @@ void pop(stack_t **stack, unsigned int count)
 	if (*stack == NULL)
 	{
 		fprintf(stderr, "L%d can't pop empty stack\n", count);
+		fclose(data.file);
+		free(data.line);
+		_free(*stack);
 		exit(EXIT_FAILURE);
 	}
 

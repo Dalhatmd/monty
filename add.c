@@ -9,7 +9,9 @@ void add(stack_t **stack, unsigned int count)
 	if (count_elem(head) < 2)
 	{
 		fprintf(stderr, "L%d: can't add, stack too short\n", count);
+		free(data.line);
 		fclose(data.file);
+		_free(*stack);
 		exit(EXIT_FAILURE);
 	}
 	
