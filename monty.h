@@ -62,4 +62,6 @@ void pall(stack_t **stack, unsigned int count);
 void pint(stack_t **stack, unsigned int count);
 void pop(stack_t **stack, unsigned int count);
 void _free(stack_t *head);
+void swap(stack_t **stack, unsigned int count);
+int count_elem(stack_t *stack);
 #endif
