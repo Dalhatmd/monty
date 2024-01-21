@@ -18,6 +18,7 @@ int execute(char *line, stack_t **stack, unsigned int count, FILE *file)
 		{"pchar", pchar},
 		{"pstr", pstr},
 		{"rotl", rotl},
+		{"rotr", rotr},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
